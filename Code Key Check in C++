@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    long keyNumber = 788884422;
+    long enteredNumber[3];
+
+    int i;
+
+    // Enter numbers
+    for(i = 0; i < 3; i++) {
+        cout << "Enter Key Number: ";
+        cin >> enteredNumber[i];
+    }
+
+    // Check numbers
+    for(i = 0; i < 3; i++) {
+
+        if(enteredNumber[i] == keyNumber) {
+            cout << "Correct Key Number" << endl;
+            break;
+        }
+    }
+
+    return 0;
+}
