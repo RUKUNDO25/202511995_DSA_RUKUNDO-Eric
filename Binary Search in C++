@@ -1,0 +1,33 @@
+#include <iostream>;
+#include <string>;
+using namespace std;
+
+int main (){
+	int z;
+	
+	cout<<"Enter number of Family Members:";
+	cin>>z;
+	string name[z];
+	int age[z];
+	for (int i=0; i<z; i++){
+		cout<<"Enter Name of Member"<<(i+1)<<endl;
+		cin>>name[i];
+		cout<<"Enter Age"<<(i+1)<<endl;
+		cin>>age[i];
+	
+}
+     int middle;
+     string key;
+     cout<<"\nEnter Name to Search:"<<endl;
+     cin>>key;
+for (int i=middle; i<z; i++){
+	if (name[i]==key){
+		cout<<key<<"\nWas Found and Aged is:"<<age[i]<<endl;
+		break;
+	}
+	else {
+		cout<<"\nMember Not Found"<<endl;
+	}
+}
+	
+}
